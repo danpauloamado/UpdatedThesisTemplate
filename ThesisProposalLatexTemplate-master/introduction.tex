@@ -1,20 +1,22 @@
 \section{Background of the Study}
 
-The Philippines is the world’s eighth-largest rice producer. Its arable land totals 5.4 million hectares. Rice area harvested has expanded from nearly 3.8 million hectares in 1995 to about 4.4 million hectares in 2010. However, the country’s rice area harvested is still very small compared with that of the other major rice-producing countries in Asia. Climate change, growing population, declining land area, high cost of inputs, and poor drainage and inadequate irrigation facilities are the major constraints to rice production in the Philippines. Some of these constraints are interrelated. Unabated conversion of some agricultural land to residential, commercial, and industrial land reduces the area devoted to rice production, which leads to a shortage in domestic supply (ricepedia.org). The Philippines is one of the largest producers of rice in the world, despite of having an inadequate rice area caused by several factors which led to inadequacy of domestic supply.   
+The Philippines is the world’s eighth-largest rice producer. Its arable land totals 5.4 million hectares. Rice area harvested has expanded from nearly 3.8 million hectares in 1995 to about 4.4 million hectares in 2010. However, the country’s rice area harvested is still very small compared with that of the other major rice-producing countries in Asia. Climate change, growing population, declining land area, high cost of inputs, and poor drainage and inadequate irrigation facilities are the major constraints to rice production in the Philippines. Some of these constraints are interrelated. Unabated conversion of some agricultural land to residential, commercial, and industrial land reduces the area devoted to rice production, which leads to a shortage in domestic supply (ricepedia.org). The Philippines is one of the largest producers of rice in the world, despite of having an inadequate rice area caused by several factors which led to inadequacy of domestic supply.  Meanwhile, in Japan, the rapid aging of farm workers and depopulation of farming communities are currently becoming a major concern. The number of farmers was 4.82 million in 1990 and is decreasing to 2.60 million in 2010. This decrease has been continuing for over 50 years. The farmer's average age is over 65 years old (MAFF 2012). This results into the decrease in production of rice in Japan, which then led to the development of fully robot-operated farming from tillage to harvest in large-scale agriculture (Tamaki, et al.).
+	
+The development or agricultural robot, led some researchers to utilize image processing for navigation. Digital image processing allows a much wider range of algorithms to be applied to the input data and can avoid problems such as the build-up of noise and signal distortion during processing. Today machine visions are applied in two dimensions (2-D) or three dimensions (3-D). The 2-D vision systems use area scan or line scan cameras as well as appropriate lighting to measure the visible characteristics of an object such as, quality of surface appearance, edge based measurements and presence and location of features. In agriculture, 2-D has applications in sorting based on color, shape and size. In 3-D analysis basically there are two techniques applied: stereo vision and LED/laser triangulation. Machine vision-based guidance showed acceptable performance at all speeds and different paths by average errors below 3 cm. It was proposed that using both machine vision and laser radar may provide a more robust guidance as well as obstacle detection capability (Mousazadech, 2013).
 
-The Philippines imports about 10\% of its annual consumption requirements. In 2010 and 2011, the country was the biggest rice importer. Its rice imports amounted to 2.38 million t in 2010, mostly coming from Vietnam and Thailand. (ricepedia.org). Despite of being one of the largest rice producers in the world, the Philippines still imports rice from their neighboring countries to make up for the shortage in its domestic supply.
+	For the Philippines to become self-sufficient in rice, it has to adopt existing technologies such as improved varieties and know-how to have yield increase by 1–3 t/ha. Better quality seed combined with good management, including new postharvest technologies, is the best way to improve rice yields and the quality of production (ricepedia.org). The utilization of new technology could help increase the production of rice in the country, increase our domestic supply, decrease the need to import rice, reduce the consumer cost, and increase the profit gain of farmers. In this study, we focus on the development and research of a rice planting robot that could be implemented in the Philippines. This study specifically focuses on the use of image processing as the robot’s main navigation system, the development of a rice planting mechanism, and the possible effect of rice planting robot in Philippine agriculture.
 
-For the Philippines to become self-sufficient in rice, it has to adopt existing technologies such as improved varieties and know-how to have yield increase by 1–3 t/ha. Better quality seed combined with good management, including new postharvest technologies, is the best way to improve rice yields and the quality of production (ricepedia.org). The utilization of new technology could help increase the production of rice in the country, increase our domestic supply, decrease the need to import rice, reduce the consumer cost, and increase the profit gain of farmers.
 
 
 \section{Prior Studies}
-
-A resource entitled "A Robot System for Paddy Field Farming in Japan" is set to utilize a robot-operated farming technology guided from tillage to harvest in large-scale agriculture. In such application, it is seen that in the cultivation of rice, wheat and soybean (in Japan, as per the researchers' host country), there has been three types of robot in development. First, a robot tractor, followed by a rice transplanter, finally, combines harvester robots. Real-time Kinematic Global Positioning System (RTK-GPS) and Inertia Measurement Unit (IMU), or Global Positioning System (GPS) compass are utilized for navigation system. These robots have a Controller Area Network (CAN) bus that all sensors and computers can be connected and interfaced in common among other robots such as tractors, rice transplatners and combine harvesters. Hence, these could be officiated in autonomous operation in paddy fields as well as discussing in this paper the ability of moving across fields for effective operations and safe guidelines for robot systems.
-
-Another is a resource entitled “A Global Positioning System guided automated rice transplanter" that speaks about a new Global Positioning System (GPS) guided rice transplanter. This study is very coherent to the aforementioned research as this resource speaks more about the utilization of the GPS technology they used in implementing the three robots as tractor, rice transplanter and combine harvester. With these, such robot systems were GPS-guided with their respective position data and inertia measurement unit direction data. This new one (inherent to this resource) is guided with GPS position data with tilt correction during straight driving and guided with the data gathered from the IMU during each robot's turning at the head land. An antenna prescribed to the GPS is set to 1.5 meters (as height) and 0.4 meters as its offset at the vehicle's front axle. The actuator control command and data communication protocols adhere through the controller area network (CAN) bus. Hence, steering and transmission systems are controlled through electrical actuators with respect to the location in a given field.
-
-Lastly, a resource entitled “Robot Farming System Using Multiple Tractors in Japan” with the objective to develop a robot farming system using multiple robots. It discusses the application of multiple robots in Japan agriculture for rice, wheat, and soybean. The system that is discussed in this paper includes a rice planting robot, a seeding robot, a robot tractor, a combine robot harvester, and several tools attached on the robot tractor. The main objective of this paper is to help the farmers gain more profit thru farming. The paper focused on robot management system, low-cost system, robot farming safety, and real-time monitoring/documentation.
-
+Pertinent to the needs of the country, the Philippines is centered and concentrated in conducting researches on agricultural technology. As a country highly capable of producing its own sources of food, there is no doubt that there is priority in funding these researches. These, in turn, allow its agriculture to be as advanced as it requires for its growing population. Following the group’s interest in integrating its recent forms of technology in indigenous sectors of the society, the members conducted brief, prior studies about the current advancements in agricultural technology of different origins. They purposed to find foreign researches in order to extend the capabilities of local technology to be as equally competent.
+\begin{itemize}
+\item A resource entitled "A Robot System for Paddy Field Farming in Japan" is set to utilize a robot-operated farming technology guided from tillage to harvest in large-scale agriculture. In such application, it is seen that in the cultivation of rice, wheat and soybean (in Japan, as per the researchers' host country), there has been three types of robot in development. First, a robot tractor, followed by a rice transplanter, finally, combines harvester robots. Real-time Kinematic Global Positioning System (RTK-GPS) and Inertia Measurement Unit (IMU), or Global Positioning System (GPS) compass are utilized for navigation system. These robots have a Controller Area Network (CAN) bus that all sensors and computers can be connected and interfaced in common among other robots such as tractors, rice transplanters and combine harvesters. Hence, these could be officiated in autonomous operation in paddy fields as well as discussing in this paper the ability of moving across fields for effective operations and safe guidelines for robot systems.
+ 
+\item Another is a resource entitled “A Global Positioning System guided automated rice transplanter" that speaks about a new Global Positioning System (GPS) guided rice transplanter. This study is very coherent to the aforementioned research as this resource speaks more about the utilization of the GPS technology they used in implementing the three robots as tractor, rice transplanter and combine harvester. With these, such robot systems were GPS-guided with their respective position data and inertia measurement unit direction data. This new one (inherent to this resource) is guided with GPS position data with tilt correction during straight driving and guided with the data gathered from the IMU during each robot's turning at the head land. An antenna prescribed to the GPS is set to 1.5 meters (as height) and 0.4 meters as its offset at the vehicle's front axle. The actuator control command and data communication protocols adhere through the controller area network (CAN) bus. Hence, steering and transmission systems are controlled through electrical actuators with respect to the location in a given field.
+ 
+\item Lastly, a resource entitled “Robot Farming System Using Multiple Tractors in Japan” with the objective to develop a robot farming system using multiple robots. It discusses the application of multiple robots in Japan agriculture for rice, wheat, and soybean. The system that is discussed in this paper includes a rice planting robot, a seeding robot, a robot tractor, a combine robot harvester, and several tools attached on the robot tractor. The main objective of this paper is to help the farmers gain more profit thru farming. The paper focused on robot management system, low-cost system, robot farming safety, and real-time monitoring/documentation.
+\end{itemize}
 
 
 
@@ -53,28 +55,70 @@ By engaging software-heavy technique such as computer vision into an electronic 
 
 
 \section{Assumptions, Scope and Delimitations}
-
-Bulletize your scope in one group, and then bulletize the delimitations in another.  Bulletize your assumptions as well.
-
+Across the whole duration of the study, the group concentrated on the following:
+\begin{itemize}
+\item Focused on guiding a robot system thru computer vision across a small-area of a rural paddy field
+\item With added mechanism of planting seedlings to tilled, muddy lands
+\item Utilization of the edge-detection algorithm to navigate a robot system
+\item Interfacing OpenCV to operate an Arduino-based Robot System
+\end{itemize}
+ 
+With this, there were limitations set to the following extents:
+\begin{itemize}
+\item Localization of field study with the environmental factors seen at Jaybanga, Lobo, Batangas
+\item Robot functionalities set to plant seedlings by picking holes of one-inch diameter per half-square meter of muddy land
+\item Robot vision from a 240P-resolution camera under live feed
+\item Tested twenty iterations of planting seedlings in one pass
+\item Ran two daytime field tests on two Saturdays of the month of July
+\end{itemize}
 
 \section{Description and Methodology}
 
-\blindtext
-
-
-\ifFinished
-\else
+	The core of the mobile robot is the GizDuino X Version 2.0. It handles the operations of the robot by processing input data from the camera and commanding the motors of the wheels to mobilize the robot. Using edge detection software, in this case OpenCV, the robot calculates for the distance, speed, and direction it has to go. The edge of the paddy works as the limit where the robot needs to go, and with the use of a rice planting mechanism the robot fills the whole segment of the paddy area with rice seedlings placed on a specialized container. Light emitting diodes are utilized by the robot for night operations. Weatherproofing or waterproofing the robot should also be considered taking to account that the paddy area is damp or wet during the plantation process and puts the robot at risks of water damage. Unexpected rain and flood are also few of the risks that should be considered for waterproofing the robot. It is expected that once the robot is set, it will do its work with 0 to minimum human interaction or intervention, except during the refilling of the seedlings in the container. 
+ 
+    The process of the study was to suggest an automated system that would plant rice seedlings on a rural paddy field. Apart from the projected upkeep from a commercial paddy field, it was manageable for the group to train the proposed system at a relatively lower upkeep; that is on a rural paddy field. The key method of testing was to implement a navigation system for the robot. Achieved through edge detection, the group mounted a camera that served as the robot’s guidance sensor for navigation. The algorithm was implemented thru OpenCV and was translated into machine-level instruction using Arduino to mandate basic directional movements of a robot: forwarding, backwarding and turning.
+ 
+    With a known, existing system that still utilized human interaction, (i.e. a Japanese farmer pulling a planting machine that picked holes and chuted seedlings), this was the framework of the study; but to not include human interaction in machine operation. Hence, with this framework, the group aimed to compare if removing human interaction would act as equally useful in full-automation. The variables at test were the accuracy and speed of the automated plantation. These variables were in applied in the performance of the farmer and the robot. The rice farmer played a vital role in this study, because the study’s standards were based fully in his performance. Hence, the factors to be measured in the two performances were
+\begin{itemize}
+\item Time taken to plant twenty seedlings on a single crop row (Farmer and Robot)
+\item Proper picking depth, measured in millimeters (Farmer and Robot)
+\end{itemize}
+ 
+    The group designated their independent study as the farmer’s performance; leaving out the robot’s performance as the dependent study. Therefore, to confirm gathered results about the robot, the group calculated the dispersion and central tendencies of the data taken from the dependent study to the independent study: from the time and depth variables. The group decided this validation method as such due to the ideal purpose of the proposed system: it should be able to replace farmers in field planting.
+ 
 
 \section{Estimated Work Schedule and Budget}
 
-Gantt chart or similar is to be part of this section.
+% Table generated by Excel2LaTeX from sheet 'Sheet1'
+\begin{table}[htbp]
+  \centering
+  \caption{Bill of Components}
+    \begin{tabular}{rrr}
+    \toprule
+    \textbf{UNIT} & \textbf{COMPONENT} & \textbf{PRICE/UNIT} \\
+    \midrule
+    1     & GizDuino X & ₱1090.00 \\
+    1     & Motor Driver (L293D) & ₱80.00 \\
+    2     & Wheel & ₱30.00 \\
+    4     & Universal Printed Circuit Board (Small) & ₱10.00 \\
+    5     & DC Motor & ₱70.00 \\
+    1     & Chassis (Material Enclosure) & ₱100.00 \\
+    1     & Set of Nuts and Bolts & ₱30.00 \\
+    20    & Jumper Wire & ₱7.00 \\
+    1     & Serial Camera & ₱1480.00 \\
+    1     & Rice Planting Mechansim & ₱1000.00 \\
+    1     & Battery (9 Volts) & ₱75.00 \\
+    1     & Voltage Regulator (LM7805) & ₱20.00 \\
+    ~10   & Resistor (Ranging Values) & ₱0.25 \\
+    ~2    & Ceramic Capacitor (Ranging Values) & ₱2.00 \\
+    2     & Light-emitting Diode Lamp & ₱40.00 \\
+		\midrule
+    \textbf{TOTAL} & \textbf{} & \textbf{~₱4551.50} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:addlabel}%
+\end{table}%
 
-\blindtext
-
-\section{Publication Plan}
-\blindtext
-
-\fi
 
 
 \section{Overview}
